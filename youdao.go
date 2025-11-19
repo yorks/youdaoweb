@@ -418,8 +418,8 @@ func (doc *MyDoc) GetCollins() Collins {
 					jsonBytes, _ := json.Marshal(examSents)
 					//fmt.Println(string(jsonBytes))
 					json.Unmarshal(jsonBytes, &ct)
-					c.Trans = append(c.Trans, ct)
 				}
+				c.Trans = append(c.Trans, ct)
 			}
 		}
 	}
