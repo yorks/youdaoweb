@@ -1,4 +1,4 @@
-module youdaoweb
+module github.com/yorks/youdaoweb
 
 go 1.24.0
 
