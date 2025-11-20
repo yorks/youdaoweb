@@ -639,8 +639,8 @@ func (doc *MyDoc) GetETYMs() ETYMs {
 		jsonBytes, _ := json.Marshal(relDict)
 		json.Unmarshal(jsonBytes, &root)
 		//fmt.Println(root)
-		for lang, items := range root.ETYM {
-			fmt.Println(lang, items)
+		for _, items := range root.ETYM {
+			//fmt.Println(lang, items)
 			sents.Trans = append(sents.Trans, items...)
 		}
 	}
